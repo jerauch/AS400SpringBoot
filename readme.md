@@ -65,7 +65,7 @@ spring.datasource.driver-class-name=com.ibm.as400.access.AS400JDBCDriver
 - Username et password : je vous laisse deviner à quoi servent ces champs ;-)
 - Et ensuite on préciser le nom du driver à utiliser, qui est fournit par JT400
 
-# Accès aux données
+## Accès aux données
 
 Pour accéder aux données, nous avons (au moins) deux solutions : Utiliser JPA ou alors écrire des requêtes SQL.
 
@@ -191,7 +191,7 @@ Et sa version web :
 
 Voilà comment moderniser l'affichage d'une application AS400 en mode web, et à partir de là on peut commencer à ré-écrire entièrement une application en ajoutant des formulaires de saisie par exemple, tout en conservant les données sur l'AS400. On peut également utiliser Spring Boot pour développer des micro services qui utilisent les données AS400 et écrire un front en Angular. 
 
-# Utiliser des requêtes SQL au lieu de JPA 
+## Utiliser des requêtes SQL au lieu de JPA 
 
 Dans l'exemple ci dessus, comme on ne fait que de l'affichage, il n'est pas nécéssaire d'utiliser JPA. On peut modifier le controler et récupérer directement les données :
 
@@ -204,7 +204,7 @@ Dans l'exemple ci dessus, comme on ne fait que de l'affichage, il n'est pas néc
 
 Idéalement pour un vrai projet il faudrait utiliser en service entre le contrôleur et le repository ou la requête SQL.
 
-# Déployer l'application sur l'AS400
+## Déployer l'application sur l'AS400
 
 On va créer un fichier jar depuis notre projet en utilisant Maven (sur le fichier pom.xml on fait Run as / Maven build puis mettre package dans les Goals) :
 
